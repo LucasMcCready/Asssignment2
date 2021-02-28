@@ -12,17 +12,16 @@ public class cloudmovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //Sets the start position of the cloud
         startPos = transform.position;
-        
-
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        mousePos = Input.mousePosition*2;
+        //Moves the cloud
+        mousePos = Input.mousePosition;
         mousePos.z = Camera.main.nearClipPlane;
         endPos = Camera.main.ScreenToWorldPoint(mousePos);
         lerp += Time.deltaTime / duration;

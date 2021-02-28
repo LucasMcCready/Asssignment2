@@ -21,13 +21,13 @@ public class StickMove : MonoBehaviour
     {
 
         
-
+        //Gets the position of the mouse
         Vector3 position = transform.position;
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = Camera.main.nearClipPlane;
         screenPos = Camera.main.ScreenToWorldPoint(mousePos);
 
-
+        //Sets the stickman to move if the mouse is on the screen
         if (screenPos.x > transform.position.x && Mathf.Abs(screenPos.x) < 9.5 && Mathf.Abs(screenPos.y) < 5.5 && transform.position.x > -8.2)
         {
 
@@ -59,6 +59,7 @@ public class StickMove : MonoBehaviour
             speed = 0f;
         }
 
+        //Tells the animator to start/stop the running animation
         animator.SetFloat("Speed", speed);
 
     }

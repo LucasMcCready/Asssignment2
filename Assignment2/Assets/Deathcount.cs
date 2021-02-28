@@ -14,6 +14,7 @@ public class Deathcount : MonoBehaviour
     void Start()
     {
 
+        //references the knife
         COUNT = GameObject.FindGameObjectWithTag("WEAPON").GetComponent<Kill>();
         Debug.Log(COUNT.count);
 
@@ -23,6 +24,7 @@ public class Deathcount : MonoBehaviour
     void Update()
     {
 
+        //Sends the text to the screen
        myText.text = "Times Stabbed : " + COUNT.count.ToString();
 
     }

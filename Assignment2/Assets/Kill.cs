@@ -21,6 +21,7 @@ public class Kill : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        //Adds to the stab count when knife hits
         count = count + 1;
         Debug.Log(count);
     }

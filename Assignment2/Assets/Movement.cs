@@ -17,12 +17,15 @@ public class Movement : MonoBehaviour
     void Update()
     {
 
+        //gets position of mouse on screen
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = Camera.main.nearClipPlane;
         screenPos = Camera.main.ScreenToWorldPoint(mousePos);
 
+        //sets the knife to move with mouse
         transform.position = screenPos;
 
+        //rotates the knife to follow the stickman
         float AngleRad = Mathf.Atan2(Target.transform.position.y - transform.position.y, Target.transform.position.x - transform.position.x);
 
         float AngleDeg = (180 / Mathf.PI) * AngleRad;
