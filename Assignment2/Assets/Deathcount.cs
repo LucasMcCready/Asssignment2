@@ -23,7 +23,7 @@ public class Deathcount : MonoBehaviour
     void Update()
     {
 
-       myText.text = "Times Killed : " + COUNT.count.ToString();
+       myText.text = "Times Stabbed : " + COUNT.count.ToString();
 
     }
 }
