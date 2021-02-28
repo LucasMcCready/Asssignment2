@@ -21,11 +21,11 @@ public class Movement : MonoBehaviour
         screenPos = Camera.main.ScreenToWorldPoint(mousePos);
 
         transform.position = screenPos;
-        if (Input.GetKey(KeyCode.Mouse0)) {
+        /*if (Input.GetKey(KeyCode.Mouse0)) {
 
             Debug.Log(screenPos);
         
-        }
+        }*/
 
     }
 }

@@ -61,23 +61,5 @@ public class StickMove : MonoBehaviour
 
         animator.SetFloat("Speed", speed);
 
-
-
-        /*if (Input.GetKey(KeyCode.Mouse0)) {
-
-            if (lookR == false)
-            {
-                transform.rotation = Quaternion.Euler(0, 180, 0);
-                lookR = true;
-            }
-            else {
-                transform.rotation = Quaternion.Euler(0, 0, 0);
-                lookR = false;
-            }
-        
-
-        }
-        */
-
     }
 }
